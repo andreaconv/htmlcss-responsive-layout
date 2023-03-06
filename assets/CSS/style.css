@@ -35,7 +35,13 @@ body{
   text-align: center;
 }
 
+h2{
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
 h3{
+  font-size: 1.8rem;
   font-weight: 900;
 }
 
@@ -159,32 +165,51 @@ section:nth-child(even){
   width: 100%;
 }
 
-
 /* PLANNING  */
 
-.planning .left .image{
+.planning{
+  padding: 80px 0;
+  color: white;
+}
+
+.planning .image{
   width: 100%;
 }
 
-.planning .left .image img{
+.planning .image img{
   width: 100%;
   object-fit: cover;
 }
 
-.planning .left .text{
-  /* debug */
-  height: 200px;
-  background-color: white;
-  border: 1px solid black;
+.planning h2{
+  margin: 4rem 0;
 }
 
-.planning .right .image{
-  /* debug */
-  height: 200px;
-  background-color: white;
-  border: 1px solid black;
+.planning p{
+  line-height: 2rem;
 }
 
+.planning .right{
+  padding: 20px 10px;
+  background-color: white;
+  border-radius: 60px;
+  text-align: center;
+}
+
+.planning .right .text{
+  color: black;
+}
+
+.planning .right h3{
+  margin: 2rem 0;
+}
+
+.planning .right i{
+  font-size: 1.5rem;
+  padding: 30px 35px;
+  border-radius: 50%;
+  background-color: #9792e4;
+}
 
 /* ABOUT-US */
 
@@ -265,6 +290,10 @@ footer{
 
   /* PLANNING  */
 
+  .planning{
+  
+  }
+
   /* TESTIMONIALS  */
   .testimonials .row .col{
     display: flex;
@@ -334,10 +363,16 @@ footer{
 
   .planning{
     display: flex;
+    width: 800px;
   }
   
   .planning .left, .planning .right{
     width: 50%;
+    margin: 0 30px;
+  }
+
+  .planning .right{
+    height: ;
   }
   
   /* TESTIMONIALS  */
