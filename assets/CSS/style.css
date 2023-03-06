@@ -119,6 +119,12 @@ footer{
     width: calc(100% / 3);
   }
 
+  .testimonials .row .col{
+    display: flex;
+    /* debug */
+    justify-content: space-between;
+  }
+
 
 }
 
