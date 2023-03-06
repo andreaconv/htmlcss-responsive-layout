@@ -125,6 +125,15 @@ footer{
     justify-content: space-between;
   }
 
+  .benefits .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .benefits .row .col{
+    width: 50%;
+  }
+
 
 }
 
@@ -144,5 +153,10 @@ footer{
   .planning .left, .planning .right{
     width: 50%;
   }
+
+  .benefits .row .col{
+    width: calc(100% / 3);
+  }
+
   
 }
