@@ -75,21 +75,26 @@ footer{
   height: 50px;
 }
 
+
+
+
+
+
 /* RESPONSIVE */
 
 /* TABLET */
 
 @media screen and (min-width:600px) {
-  .row{
+  .jumbo .row{
     display: flex;
     flex-wrap: wrap;
   }
 
-  .col.big{
+  .jumbo .col.big{
     width: calc(100% / 3 * 2);
   }
   
-  .col{
+  .jumbo .col{
     width: calc(100% / 3);
   }
 }
