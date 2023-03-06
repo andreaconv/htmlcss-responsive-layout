@@ -13,7 +13,7 @@ body{
   width: 90%;
   margin: 0 auto;
   /* debug */
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 100%;
 }
 
@@ -35,6 +35,10 @@ body{
   text-align: center;
 }
 
+h3{
+  font-weight: 900;
+}
+
 ul{
   list-style: none;
 }
@@ -42,7 +46,10 @@ ul{
 a{
   text-decoration: none;
   color: white;
+}
 
+.m-btm-1rem{
+  margin-bottom: 1rem;
 }
 
 
@@ -72,7 +79,7 @@ header .icon{
   margin-right: 10px;
 }
 
-
+/* FINE HEADER  */
 
 
 /* MAIN  */
@@ -93,26 +100,75 @@ section:nth-child(even){
 .col{
   width: 100%;
   /* debug */
-
-  height: 200px;
-  background-color: #b5ddff;
-  border: 1px solid black;
+  /* height: 200px; */
+  /* background-color: #b5ddff; */
+  /* border: 1px solid black; */
 }
 
 /* JUMBO  */
 
 .container.jumbo{
-  margin-top: 70px;
+  margin: 90px auto;
+}
+
+.jumbo .card{
+  margin: 20px 10px;
+  border-radius: 20px;
+  background-color: #b5ddff;
+  padding: 20px 20px 0;
+}
+
+.jumbo .card:not(.col.big .card){
+  text-align: center;  
+  padding-bottom: 2rem;
+}
+
+.jumbo .card i:not(button i){
+  font-size: 3rem;
+  color: #0084fd;
+
+}
+
+.jumbo h3{
+  color: #0084fd;
+  margin: 1rem 0;
+}
+
+.jumbo p{
+  line-height: 2rem;
+}
+
+.jumbo button{
+  color: white;
+  background-color: #0084fd;
+  border: none;
+  padding: 10px 60px;
+  border-radius: 20px;
+}
+
+.jumbo button i{
+  margin-right: 10px;
+}
+
+.jumbo .col.big .image{
+  width: 250px;
+  margin: 0 auto;
+}
+
+.jumbo .col.big .image img{
+  width: 100%;
 }
 
 
 /* PLANNING  */
 
 .planning .left .image{
-  /* debug */
-  height: 200px;
-  background-color: white;
-  border: 1px solid black;
+  width: 100%;
+}
+
+.planning .left .image img{
+  width: 100%;
+  object-fit: cover;
 }
 
 .planning .left .text{
@@ -181,6 +237,7 @@ footer{
 /* TABLET */
 
 @media screen and (min-width:550px) {
+  /* JUMBO  */
   .jumbo .row{
     display: flex;
     flex-wrap: wrap;
@@ -194,11 +251,28 @@ footer{
     width: calc(100% / 3);
   }
 
+  .jumbo .col.big .image{
+    margin: 0;
+  }
+
+  .jumbo .col{
+    display: flex;
+  }
+
+  .jumbo .card{
+    margin: 10px;
+  }
+
+  /* PLANNING  */
+
+  /* TESTIMONIALS  */
   .testimonials .row .col{
     display: flex;
     /* debug */
     justify-content: space-between;
   }
+
+  /* BENEFITS  */
 
   .benefits .row{
     display: flex;
@@ -208,6 +282,8 @@ footer{
   .benefits .row .col{
     width: 50%;
   }
+
+  /* ABOUT-US  */
 
   .about-us{
     display: flex;
@@ -220,6 +296,8 @@ footer{
   .about-us .right{
     width: 40%;
   }
+
+  /* GET-STARTED  */
 
   .container.get-started, footer .container{
     width: 500px;
@@ -245,6 +323,15 @@ footer{
     display: none;
   }
 
+  .jumbo .col.big .card{
+    display: flex;
+  }
+
+.jumbo .card .text{
+  width: 50%;
+}
+  /* PLANNING  */
+
   .planning{
     display: flex;
   }
@@ -252,10 +339,17 @@ footer{
   .planning .left, .planning .right{
     width: 50%;
   }
+  
+  /* TESTIMONIALS  */
+
+  /* BENEFITS  */
 
   .benefits .row .col{
     width: calc(100% / 3);
   }
 
+  /* ABOUT-US  */
+
+  /* GET-STARTED  */
   
 }
