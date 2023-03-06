@@ -9,9 +9,14 @@
   width: 90%;
   margin: 0 auto;
   /* debug */
-  background-color: rgba(0, 255, 255, 0.5);
   border: 1px solid black;
   height: 100%;
+}
+
+/* UTILS */
+
+.d-flex{
+  display: flex;
 }
 
 /* HEADER  */
@@ -22,16 +27,45 @@ header{
   background-color: #0084fd;
 }
 
+
+
 /* MAIN  */
 
 section{
   /* debug */
-  height: 100px;
+  min-height: 100px;
 }
 
 section:nth-child(even){
   background-color: #9792e4;
 }
+
+.row{
+
+}
+
+.col{
+  width: 100%;
+  /* debug */
+
+  height: 200px;
+  background-color: #b5ddff;
+  border: 1px solid black;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER  */
 
@@ -43,3 +77,29 @@ footer{
 
 /* RESPONSIVE */
 
+/* TABLET */
+
+@media screen and (min-width:600px) {
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col.big{
+    width: calc(100% / 3 * 2);
+  }
+  
+  .col{
+    width: calc(100% / 3);
+  }
+}
+
+
+
+/* DESKTOP */
+
+@media screen and (min-width:1200px) {
+  .container{
+    width: 1140px;
+  }  
+}
