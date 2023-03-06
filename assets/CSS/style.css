@@ -51,9 +51,30 @@ section:nth-child(even){
   height: 200px;
   background-color: #b5ddff;
   border: 1px solid black;
-
 }
 
+/* PLANNING  */
+
+.planning .left .image{
+  /* debug */
+  height: 200px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.planning .left .text{
+  /* debug */
+  height: 200px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.planning .right .image{
+  /* debug */
+  height: 200px;
+  background-color: white;
+  border: 1px solid black;
+}
 
 
 
@@ -97,6 +118,8 @@ footer{
   .jumbo .col{
     width: calc(100% / 3);
   }
+
+
 }
 
 
@@ -107,4 +130,13 @@ footer{
   .container{
     width: 1140px;
   }  
+
+  .planning{
+    display: flex;
+  }
+  
+  .planning .left, .planning .right{
+    width: 50%;
+  }
+  
 }
